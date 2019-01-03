@@ -14,7 +14,7 @@ class CreateFoosTable extends Migration
     {
         Schema::create(Config::get('amethyst.foo.data.foo.table'), function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
+            $table->string('name');
             $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
