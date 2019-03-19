@@ -22,8 +22,7 @@ class FooSchema extends Schema
             Attributes\LongTextAttribute::make('description'),
             Attributes\BelongsToAttribute::make('bar_id')
                 ->setRelationName('bar')
-                ->setRelationManager(BarManager::class)
-                ->setRequired(true),
+                ->setRelationManager(BarManager::class),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),
