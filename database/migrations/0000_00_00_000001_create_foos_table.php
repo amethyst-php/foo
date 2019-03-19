@@ -16,6 +16,8 @@ class CreateFoosTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('description')->nullable();
+            $table->integer('bar_id')->unsigned();
+            $table->foreign('bar_id')->references('id')->on(Config::get('amethyst.foo.data.bar.table'));
             $table->timestamps();
             $table->softDeletes();
         });

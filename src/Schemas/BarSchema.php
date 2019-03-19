@@ -2,11 +2,10 @@
 
 namespace Railken\Amethyst\Schemas;
 
-use Railken\Amethyst\Managers\BarManager;
 use Railken\Lem\Attributes;
 use Railken\Lem\Schema;
 
-class FooSchema extends Schema
+class BarSchema extends Schema
 {
     /**
      * Get all the attributes.
@@ -18,12 +17,9 @@ class FooSchema extends Schema
         return [
             Attributes\IdAttribute::make(),
             Attributes\TextAttribute::make('name')
-                ->setRequired(true),
+                ->setRequired(true)
+                ->setUnique(true),
             Attributes\LongTextAttribute::make('description'),
-            Attributes\BelongsToAttribute::make('bar_id')
-                ->setRelationName('bar')
-                ->setRelationManager(BarManager::class)
-                ->setRequired(true),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),

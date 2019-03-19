@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Amethyst\Common\ConfigurableModel;
 use Railken\Lem\Contracts\EntityContract;
 
-class Foo extends Model implements EntityContract
+class Bar extends Model implements EntityContract
 {
     use SoftDeletes, ConfigurableModel;
 
@@ -18,15 +18,7 @@ class Foo extends Model implements EntityContract
      */
     public function __construct(array $attributes = [])
     {
-        $this->ini('amethyst.foo.data.foo');
+        $this->ini('amethyst.foo.data.bar');
         parent::__construct($attributes);
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function bar()
-    {
-        return $this->belongsTo(Bar::class);
     }
 }
