@@ -29,6 +29,6 @@ class Foo extends Model implements EntityContract
      */
     public function bar(): BelongsTo
     {
-        return $this->belongsTo(config('amethyst.bar.data.bar.model'));
+        return $this->belongsTo(config('amethyst.foo.data.bar.model'));
     }
 }
