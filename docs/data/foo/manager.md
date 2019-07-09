@@ -1,4 +1,4 @@
-## Railken\Amethyst\Managers\FooManager
+## Amethyst\Managers\FooManager
 
 The manager is the main class to access and manipulate your model.
 
@@ -22,7 +22,7 @@ Create the new manager in `app/Managers/FooManager`
 ```php
 namespace App\Managers;
 
-use Railken\Amethyst\Managers\FooManager as Manager;
+use Amethyst\Managers\FooManager as Manager;
 
 class FooManager extends Manager {
 	// ...

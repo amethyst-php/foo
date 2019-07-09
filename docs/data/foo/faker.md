@@ -1,11 +1,11 @@
-## Railken\Amethyst\Fakers\FooFaker
+## Amethyst\Fakers\FooFaker
 
 The faker can be used for testing or seeding.
 
 Create a new entity using the faker
 
 ```php
-use Railken\Amethyst\Fakers\FooFaker;
+use Amethyst\Fakers\FooFaker;
 
 $result = $manager->create(Faker::make()->parameters());
 ```
@@ -16,7 +16,7 @@ Create the new faker in `app/Fakers/FooFaker`
 ```php
 namespace App\Fakers;
 
-use Railken\Amethyst\Fakers\FooFaker as Faker;
+use Amethyst\Fakers\FooFaker as Faker;
 
 class FooFaker extends Faker {
 	// ...

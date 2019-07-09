@@ -1,9 +1,9 @@
-## Railken\Amethyst\Repositories\FooRepository
+## Amethyst\Repositories\FooRepository
 
 The repository is the class to perform queries.
 
 ```php
-use Railken\Amethyst\Managers\FooManager;
+use Amethyst\Managers\FooManager;
 
 $manager = new FooManager();
 
@@ -38,7 +38,7 @@ Create the new repository in `app/Repositories/FooRepository`
 ```php
 namespace App\Repositories;
 
-use Railken\Amethyst\Repositories\FooRepository as Repository;
+use Amethyst\Repositories\FooRepository as Repository;
 
 class FooRepository extends Repository {
 	// ...

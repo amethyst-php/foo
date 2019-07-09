@@ -22,7 +22,7 @@ interface AgentContract
 You can use whatever permission-library suits you to implement this method
 
 ```php
-use Railken\Amethyst\Managers\FooManager;
+use Amethyst\Managers\FooManager;
 
 $manager = new FooManager($user);
 

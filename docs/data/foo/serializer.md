@@ -1,9 +1,9 @@
-## Railken\Amethyst\Serializers\FooSerializer
+## Amethyst\Serializers\FooSerializer
 
 The serializer is used to serialize an entity, you can retrieve it from the data.
 
 ```php
-use Railken\Amethyst\Managers\FooManager;
+use Amethyst\Managers\FooManager;
 
 $manager = new FooManager();
 
@@ -25,7 +25,7 @@ Create the new serializer in `app/Serializers/FooSerializer`
 ```php
 namespace App\Serializers;
 
-use Railken\Amethyst\Serializers\FooSerializer as Serializer;
+use Amethyst\Serializers\FooSerializer as Serializer;
 
 class FooSerializer extends Serializer {
 	// ...
