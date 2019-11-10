@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'Foo',
-    'description' => 'Foo',
+    'name' => 'Bar',
+    'description' => 'Bar',
     'attributes' => []
 ];
