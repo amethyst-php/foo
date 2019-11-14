@@ -49,7 +49,7 @@ jobs:
         run: |
           php -r "file_exists('phpunit.xml') || copy('phpunit.xml.dist', 'phpunit.xml');"
       - name: Test with Amethyst
-        run:
+        run: |
             export PATH="$HOME/.composer/vendor/bin:$PATH"
             amethyst test --verbose
       - name: Test with phpunit
