@@ -4,14 +4,6 @@ jobs:
   laravel:
     name: Laravel (PHP ${{ matrix.php-versions }})
     runs-on: ubuntu-latest
-    env:
-      DB_DATABASE: forge
-      DB_USERNAME: forge
-      DB_PASSWORD: forge
-      BROADCAST_DRIVER: log
-      CACHE_DRIVER: redis
-      QUEUE_CONNECTION: redis
-      SESSION_DRIVER: redis    
     services:
       mysql:
         image: mysql:5.7
