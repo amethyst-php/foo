@@ -1,15 +1,13 @@
 name: Style
-
-on:
+on: 
     pull_request:
         paths:
             - '**.php'
     push:
         paths:
             - '**.php'
-
 jobs:
-    php-cs-fixer:
+    style:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
