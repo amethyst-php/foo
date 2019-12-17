@@ -53,6 +53,6 @@ jobs:
         run: |
           php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Test
-        run: vendor/bin/amethyst test --verbose
+        run: vendor/bin/amethyst test:phpunit --verbose
         env:
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
