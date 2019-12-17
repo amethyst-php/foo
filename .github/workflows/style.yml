@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v1
+              uses: actions/checkout@v2
               
             - name: Install Composer dependencies
               run: |
@@ -28,7 +28,7 @@ jobs:
             - uses: stefanzweifel/git-auto-commit-action@v2.1.0
               with:
                   commit_message: Apply style changes
-                  branch: ${{ github.head_ref }}
+                  branch: if ${{ github.head_ref }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
