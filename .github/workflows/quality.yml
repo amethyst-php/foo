@@ -1,11 +1,11 @@
 name: Quality
 on: 
-    pull_request:
-        paths:
-            - '**.php'
-    push:
-        paths:
-            - '**.php'
+  pull_request:
+    paths:
+      - '**.php'
+  push:
+    paths:
+      - '**.php'
 jobs:
   quality:
     runs-on: ubuntu-latest
