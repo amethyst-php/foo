@@ -10,5 +10,6 @@ class FooServiceProvider extends CommonServiceProvider
   
   
   
+  
 }
 
