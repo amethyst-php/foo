@@ -18,7 +18,9 @@ jobs:
                 composer install
 
             - name: Run fix:style
-              run: ./vendor/bin/amethyst fix:style --verbose
+              run: |
+                export PATH="$HOME/.composer/vendor/bin:$PATH"
+                amethyst fix:style --verbose
 
             - uses: stefanzweifel/git-auto-commit-action@v2.1.0
               with:
