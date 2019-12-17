@@ -1,0 +1,28 @@
+name: Format (PHP)
+
+on:
+    pull_request:
+        paths:
+            - '**.php'
+
+jobs:
+    php-cs-fixer:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+
+            - name: Install
+              run: |
+                composer require --dev amethyst/cli
+                composer install
+
+            - name: Run fix:style
+              run: ./vendor/bin/amethyst fix:style --verbose
+
+            - uses: stefanzweifel/git-auto-commit-action@v2.1.0
+              with:
+                  commit_message: Apply style changes
+                  branch: ${{ github.head_ref }}
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
