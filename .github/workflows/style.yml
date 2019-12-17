@@ -1,7 +1,10 @@
-name: Format (PHP)
+name: Style
 
 on:
     pull_request:
+        paths:
+            - '**.php'
+    push:
         paths:
             - '**.php'
 
