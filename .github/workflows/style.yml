@@ -4,6 +4,8 @@ on:
         paths:
             - '**.php'
     push:
+        branches:
+         - master
         paths:
             - '**.php'
 jobs:
