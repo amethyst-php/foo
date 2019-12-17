@@ -9,5 +9,6 @@ class FooServiceProvider extends CommonServiceProvider
 {
   
   
+  
 }
 
