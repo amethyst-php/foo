@@ -10,12 +10,13 @@ jobs:
     style:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
-
-            - name: Install
+            - name: Checkout
+              uses: actions/checkout@v1
+              
+            - name: Install Composer dependencies
               run: |
-                composer require --dev amethyst/cli
-                composer install
+                composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+                composer global require amethyst/cli
 
             - name: Run fix:style
               run: |
