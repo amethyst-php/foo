@@ -4,8 +4,6 @@ on:
         paths:
             - '**.php'
     push:
-        branches:
-         - master
         paths:
             - '**.php'
 jobs:
@@ -28,7 +26,7 @@ jobs:
             - uses: stefanzweifel/git-auto-commit-action@v2.1.0
               with:
                   commit_message: Apply style changes
-                  branch: if ${{ github.head_ref }}
+                  branch: ${{ github.ref }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
