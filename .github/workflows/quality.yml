@@ -18,7 +18,8 @@ jobs:
       - name: Install Composer dependencies
         run: |
             composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
-            export PATH="$HOME/.composer/vendor/bin:$PATH"
             composer global require amethyst/cli
       - name: Test Quality
-        run: amethyst test:phpstan --verbose
+        run: |
+            export PATH="$HOME/.composer/vendor/bin:$PATH"
+            amethyst test:phpstan --verbose
