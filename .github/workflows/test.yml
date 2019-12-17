@@ -1,5 +1,11 @@
 name: Test
-on: [push, pull_request]
+on: 
+  pull_request:
+    paths:
+      - '**.php'      
+  push:
+    paths:
+      - '**.php'
 jobs:
   laravel:
     name: Laravel ${{ matrix.laravel-versions }} (PHP ${{ matrix.php-versions }})
