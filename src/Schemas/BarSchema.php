@@ -12,7 +12,7 @@ class BarSchema extends Schema
      *
      * @var array
      */
-    public function getAttributes()
+    public function getAttributes(): array
     {
         return [
             Attributes\IdAttribute::make(),
