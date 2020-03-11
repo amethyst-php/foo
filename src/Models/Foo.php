@@ -6,8 +6,8 @@ use Amethyst\Core\ConfigurableModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Railken\Lem\Contracts\EntityContract;
 use Illuminate\Notifications\Notifiable;
+use Railken\Lem\Contracts\EntityContract;
 
 class Foo extends Model implements EntityContract
 {
