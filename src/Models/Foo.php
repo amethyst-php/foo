@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Lem\Contracts\EntityContract;
+use Illuminate\Notifications\Notifiable;
 
 class Foo extends Model implements EntityContract
 {
     use SoftDeletes;
     use ConfigurableModel;
+    use Notifiable;
 
     /**
      * Create a new Eloquent model instance.
