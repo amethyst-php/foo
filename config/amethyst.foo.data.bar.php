@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'table'      => 'amethyst_bars',
+    'table'      => 'bar',
     'comment'    => 'Bar',
     'model'      => Amethyst\Models\Bar::class,
     'schema'     => Amethyst\Schemas\BarSchema::class,

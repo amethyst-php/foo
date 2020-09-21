@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'table'      => 'amethyst_foos',
+    'table'      => 'foo',
     'comment'    => 'Foo',
     'model'      => Amethyst\Models\Foo::class,
     'schema'     => Amethyst\Schemas\FooSchema::class,
