@@ -1,12 +1,14 @@
-# amethyst-foo
+# Foo
 
-[![Actions Status](https://github.com/amethyst-php/foo/workflows/test/badge.svg)](https://github.com/amethyst-php/foo/actions)
+[![Action Status](https://github.com/amethyst-php/foo/workflows/test/badge.svg)](https://github.com/amethyst-php/foo/actions)
+[![Amethyst](https://img.shields.io/badge/package-Amethyst-7e57c2)](https://github.com/amethyst-php/amethyst)
 
-[Amethyst](https://github.com/amethyst-php/amethyst) package.
+Add two data: `foo` and `bar`. Used primarly for testing
 
 # Requirements
 
-PHP 7.1 and later.
+- PHP from 7.2 to 7.4
+- Laravel from 5.8 to 8.x
 
 ## Installation
 
@@ -18,10 +20,9 @@ composer require amethyst/foo
 
 The package will automatically register itself.
 
-## Documentation
-
-[Read](docs/index.md)
-
 ## Testing
 
-Configure the .env file before launching `./vendor/bin/phpunit`
+- Clone this repository
+- Copy the default `phpunit.xml.dist` to `phpunit.xml`
+- Change the environment variables as you see fit
+- Launch `./vendor/bin/phpunit`
