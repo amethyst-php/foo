@@ -1,13 +1,13 @@
 # Foo
 
-[![Action Status](https://github.com/amethyst-php/foo/workflows/test/badge.svg)](https://github.com/amethyst-php/foo/actions)
+[![Action Status](https://github.com/amethyst-php/foo/workflows/Test/badge.svg)](https://github.com/amethyst-php/foo/actions)
 [![Amethyst](https://img.shields.io/badge/package-Amethyst-7e57c2)](https://github.com/amethyst-php/amethyst)
 
 Add two data: `foo` and `bar`. Used primarly for testing
 
 # Requirements
 
-- PHP 8.2
+- PHP 8.2 and later
 
 ## Installation
 
