@@ -4,10 +4,10 @@ namespace Amethyst\Tests\Managers;
 
 use Amethyst\Fakers\FooFaker;
 use Amethyst\Managers\FooManager;
-use Amethyst\Tests\BaseTest;
+use Amethyst\Tests\Base;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
-class FooTest extends BaseTest
+class FooTest extends Base
 {
     use TestableBaseTrait;
 

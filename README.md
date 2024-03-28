@@ -7,8 +7,7 @@ Add two data: `foo` and `bar`. Used primarly for testing
 
 # Requirements
 
-- PHP from 7.2 to 7.4
-- Laravel from 5.8 to 8.x
+- PHP 8.2
 
 ## Installation
 

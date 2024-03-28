@@ -4,11 +4,10 @@
     "keywords": ["laravel", "amethyst", "amethyst-foo", "foo"],
     "license": "MIT",
     "require": {
-        "php": ">=7.2",
-        "amethyst/core": "0.2.*"
+        "php": ">=8.2",
+        "amethyst/core": "0.3.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
         "orchestra/testbench": "*"
     },
     "autoload": {

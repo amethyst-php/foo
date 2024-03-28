@@ -4,10 +4,10 @@ namespace Amethyst\Tests\Managers;
 
 use Amethyst\Fakers\BarFaker;
 use Amethyst\Managers\BarManager;
-use Amethyst\Tests\BaseTest;
+use Amethyst\Tests\Base;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
-class BarTest extends BaseTest
+class BarTest extends Base
 {
     use TestableBaseTrait;
 
