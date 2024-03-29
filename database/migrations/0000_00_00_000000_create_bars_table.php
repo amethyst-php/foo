@@ -13,7 +13,7 @@ class CreateBarsTable extends Migration
     public function up()
     {
         Schema::create(Config::get('amethyst.foo.data.bar.table'), function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name')->index();
             $table->text('description')->nullable();
             $table->timestamps();

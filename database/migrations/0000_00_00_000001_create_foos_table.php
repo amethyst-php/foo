@@ -13,7 +13,7 @@ class CreateFoosTable extends Migration
     public function up()
     {
         Schema::create(Config::get('amethyst.foo.data.foo.table'), function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('bar_id')->unsigned()->nullable();
